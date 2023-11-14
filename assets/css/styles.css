@@ -156,7 +156,29 @@ img {
     background-color: var(--second-color);
     transition: .5s;
   }
+
+  .theme-switch { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    background-color: #8080806b;
+    top: 90%;
+    right: 0;
+    bottom: 20px;
+    padding: 20px ;
+    font-size: 40px;
+  }
 }
+
+@media screen and (max-width: 375px) {
+  .theme-switch { 
+    top: 85%;
+    right: 0;
+    bottom: 20px;
+  }
+}
+
 
 .nav__item {
   margin-bottom: var(--mb-4);
