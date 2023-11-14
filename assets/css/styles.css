@@ -362,10 +362,6 @@ background-color: #fff;
   overflow: hidden;
 }
 
-.work__img {
-  content: 'Live Demo'; 
-}
-
 
 .work__img img {
   transition: 1s;
@@ -461,6 +457,8 @@ background-color: #fff;
     column-gap: 2rem;
     padding-top: 2rem;
   }
+
+
   .contact__form {
     display: flex;
     justify-content: center;
