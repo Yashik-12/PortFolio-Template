@@ -1,5 +1,4 @@
-const html = document.querySelector("html"),
-  navLink = document.querySelectorAll('.nav__link'),
+const  navLink = document.querySelectorAll('.nav__link'),
   sections = document.querySelectorAll('section[id]');
 
 /*===== MENU SHOW =====*/
@@ -11,7 +10,6 @@ const showMenu = (toggleId, navId) => {
   if (toggle && nav) {
     toggle.addEventListener('click', () => {
       nav.classList.toggle('show')
-      html.classList.toggle("html-scroll");
     })
   }
 }

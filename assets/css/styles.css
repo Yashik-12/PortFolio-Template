@@ -145,8 +145,6 @@ header {
 
 @media screen and (max-width: 767px) {
 
-.html-scroll { overflow-y: hidden; }
-
   .nav__menu {
     position: fixed;
     top: var(--header-height);
