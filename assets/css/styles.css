@@ -121,7 +121,7 @@ img {
   margin-right: var(--mb-2);
 }
 
-.l-header {
+header {
   width: 100%;
   position: fixed;
   top: 0;
@@ -195,8 +195,6 @@ img {
  color: var(--first-color);
 
 }
-
-
 
 .nav__logo {
   color: var(--second-color);
