@@ -46,9 +46,7 @@
   box-sizing: border-box;
 }
 
-html {
-  scroll-behavior: smooth;
-}
+html { scroll-behavior: smooth; }
 
 body {
   margin: var(--header-height) 0 0 0;
@@ -146,6 +144,9 @@ header {
 
 
 @media screen and (max-width: 767px) {
+
+.html-scroll { overflow-y: hidden; }
+
   .nav__menu {
     position: fixed;
     top: var(--header-height);
@@ -162,23 +163,14 @@ header {
     align-items: center;
     justify-content: center;
     position: fixed;
-    background-color: #8080806b;
-    top: 90%;
-    right: 0;
+    background-color:  var(--first-color);
+    border-radius: 15px;
+    right: 12px;
     bottom: 20px;
     padding: 20px ;
-    font-size: 40px;
+    font-size: 35px;
   }
 }
-
-@media screen and (max-width: 375px) {
-  .theme-switch { 
-    top: 85%;
-    right: 0;
-    bottom: 20px;
-  }
-}
-
 
 .nav__item {
   margin-bottom: var(--mb-4);
