@@ -45,7 +45,7 @@ window.addEventListener('scroll', scrollActive)
 
 // main.js
 
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', () => {
   const themeSwitch = document.getElementById('theme-switch'),
     lightMode = document.getElementById('light-mode'),
     darkMode = document.getElementById('dark-mode'),
@@ -58,8 +58,8 @@ document.addEventListener('DOMContentLoaded', function () {
     if (isDarkTheme) {
       lightMode.style.display = 'none';
       darkMode.style.display = 'inline-block';
-      darkMode.classList.add('active');
       lightMode.classList.remove('active');
+      darkMode.classList.add('active');
     } else {
       darkMode.style.display = 'none';
       lightMode.style.display = 'inline-block';
@@ -93,11 +93,9 @@ document.addEventListener('DOMContentLoaded', function () {
     if (body.classList.contains('dark-theme')) {
       githubIcon.style.color = '#fff';
       linkedinIcon.style.color = '#fff';
-      darkMode.style.color = '#fff';
     } else {
       githubIcon.style.color = ''; // Reset color to default (black or as specified in CSS)
       linkedinIcon.style.color = ''; // Reset color to default (blue or as specified in CSS)
-      darkMode.style.color = '';
     }
   });
 
@@ -113,6 +111,7 @@ document.addEventListener('DOMContentLoaded', function () {
       githubIcon.style.color = 'white'; // Reset color on mouse leave
     }
   });
+
 
   // Add hover effect for LinkedIn icon when dark theme is active
   linkedinIcon.addEventListener('mouseenter', function () {

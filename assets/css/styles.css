@@ -140,7 +140,8 @@ header {
 
 #light-mode.active { color: #c9c907; }
 
-#dark-mode.active { color: #808080; }
+#dark-mode.active,
+#dark-mode::before { color: #3b2f2f; }
 
 
 @media screen and (max-width: 767px) {
